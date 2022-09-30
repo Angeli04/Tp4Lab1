@@ -5,8 +5,6 @@
  */
 package tp04g09;
 
-import java.util.Iterator;
-import java.util.Map;
 import javax.swing.JOptionPane;
 
 /**

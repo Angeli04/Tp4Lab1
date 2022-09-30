@@ -5,10 +5,6 @@
  */
 package tp04g09;
 
-import java.util.Iterator;
-import java.util.Map;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author PUESTO-A1
@@ -53,7 +49,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         );
         dpEscritorioLayout.setVerticalGroup(
             dpEscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 579, Short.MAX_VALUE)
         );
 
         mnuAgenda.setText("Gestion");
@@ -103,7 +99,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dpEscritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(dpEscritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 579, Short.MAX_VALUE)
         );
 
         pack();
