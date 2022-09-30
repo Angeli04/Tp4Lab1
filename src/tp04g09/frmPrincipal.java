@@ -39,8 +39,10 @@ public class frmPrincipal extends javax.swing.JFrame {
         mniInscripciones = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         dpEscritorio.setBackground(new java.awt.Color(255, 255, 255));
+        dpEscritorio.setPreferredSize(new java.awt.Dimension(800, 600));
 
         javax.swing.GroupLayout dpEscritorioLayout = new javax.swing.GroupLayout(dpEscritorio);
         dpEscritorio.setLayout(dpEscritorioLayout);
@@ -50,10 +52,11 @@ public class frmPrincipal extends javax.swing.JFrame {
         );
         dpEscritorioLayout.setVerticalGroup(
             dpEscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         mnuAgenda.setText("Gestion");
+        mnuAgenda.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
 
         mniAlumnos.setText("Alumnos");
         mniAlumnos.addActionListener(new java.awt.event.ActionListener() {
@@ -87,11 +90,11 @@ public class frmPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dpEscritorio)
+            .addComponent(dpEscritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dpEscritorio)
+            .addComponent(dpEscritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

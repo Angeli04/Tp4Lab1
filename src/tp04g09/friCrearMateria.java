@@ -39,51 +39,51 @@ public class friCrearMateria extends javax.swing.JInternalFrame {
         lblNombre = new javax.swing.JLabel();
         tfAnio = new javax.swing.JTextField();
         btnSalir = new javax.swing.JButton();
-        btnCrear = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
 
-        setPreferredSize(new java.awt.Dimension(410, 320));
+        setPreferredSize(new java.awt.Dimension(400, 350));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("FORMULARIO DE CREAR MATERIA");
+        jLabel1.setText("Materias");
 
         lblDni.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblDni.setText("ID");
+        lblDni.setPreferredSize(new java.awt.Dimension(75, 25));
 
         tfIdMateria.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tfIdMateria.setMaximumSize(new java.awt.Dimension(200, 6));
         tfIdMateria.setMinimumSize(new java.awt.Dimension(200, 6));
+        tfIdMateria.setPreferredSize(new java.awt.Dimension(150, 25));
 
         lblApellido.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblApellido.setText("NOMBRE");
+        lblApellido.setPreferredSize(new java.awt.Dimension(75, 25));
 
         tfNombre.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tfNombre.setMaximumSize(new java.awt.Dimension(200, 6));
         tfNombre.setMinimumSize(new java.awt.Dimension(200, 6));
+        tfNombre.setPreferredSize(new java.awt.Dimension(200, 25));
 
         lblNombre.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblNombre.setText("AÑO");
+        lblNombre.setPreferredSize(new java.awt.Dimension(75, 25));
 
         tfAnio.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tfAnio.setMaximumSize(new java.awt.Dimension(200, 6));
         tfAnio.setMinimumSize(new java.awt.Dimension(200, 6));
+        tfAnio.setPreferredSize(new java.awt.Dimension(200, 25));
 
         btnSalir.setLabel("Salir");
+        btnSalir.setPreferredSize(new java.awt.Dimension(100, 25));
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
             }
         });
 
-        btnCrear.setLabel("Nuevo");
-        btnCrear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearActionPerformed(evt);
-            }
-        });
-
         btnGuardar.setLabel("Guardar");
+        btnGuardar.setPreferredSize(new java.awt.Dimension(100, 25));
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
@@ -99,23 +99,22 @@ public class friCrearMateria extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnGuardar)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCrear)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSalir))
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblDni, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblApellido, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblNombre, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(lblDni, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblApellido, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNombre, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(tfAnio, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                            .addComponent(tfAnio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(tfNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(tfIdMateria, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(41, 41, 41)))
-                .addGap(0, 70, Short.MAX_VALUE))
+                            .addComponent(tfIdMateria, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(41, 79, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,21 +122,20 @@ public class friCrearMateria extends javax.swing.JInternalFrame {
                 .addComponent(jLabel1)
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDni)
-                    .addComponent(tfIdMateria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblDni, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfIdMateria, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblApellido)
-                    .addComponent(tfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombre)
-                    .addComponent(tfAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
+                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfAnio, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSalir)
-                    .addComponent(btnCrear)
-                    .addComponent(btnGuardar))
+                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -145,26 +143,24 @@ public class friCrearMateria extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        Colegio.getMaterias().add(new Materia(Integer.parseInt(tfIdMateria.getText()), tfAnio.getText(), Integer.parseInt(tfAnio.getText()) ));
-        JOptionPane.showMessageDialog(this, "Materia Guardada");
-        tfIdMateria.setText("");
-        tfNombre.setText("");
-        tfAnio.setText("");
+        try{
+            Colegio.getMaterias().add(new Materia(Integer.parseInt(tfIdMateria.getText()), tfNombre.getText(), Integer.parseInt(tfAnio.getText()) ));
+            JOptionPane.showMessageDialog(this, "Materia Guardada");
+            tfIdMateria.setText("");
+            tfNombre.setText("");
+            tfAnio.setText("");
+        } catch(NumberFormatException ex){
+            JOptionPane.showMessageDialog(this, "No se pudo guardar la materia");
+        }
+
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
-        tfIdMateria.setText("");
-        tfNombre.setText("");
-        tfAnio.setText("");
-    }//GEN-LAST:event_btnCrearActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCrear;
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
