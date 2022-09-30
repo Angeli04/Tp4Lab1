@@ -37,6 +37,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         mniAlumnos = new javax.swing.JMenuItem();
         mniMaterias = new javax.swing.JMenuItem();
         mniInscripciones = new javax.swing.JMenuItem();
+        mniListado = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -81,6 +82,14 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
         mnuAgenda.add(mniInscripciones);
+
+        mniListado.setText("Listado");
+        mniListado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniListadoActionPerformed(evt);
+            }
+        });
+        mnuAgenda.add(mniListado);
 
         mnbOpciones.add(mnuAgenda);
 
@@ -127,6 +136,15 @@ public class frmPrincipal extends javax.swing.JFrame {
         dpEscritorio.moveToFront(formCrearInscripcion);
     }//GEN-LAST:event_mniInscripcionesActionPerformed
 
+    private void mniListadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniListadoActionPerformed
+        dpEscritorio.removeAll();
+        dpEscritorio.repaint();
+        friListarInscripciones formListarInscripciones = new friListarInscripciones();
+        formListarInscripciones.setVisible(true);
+        dpEscritorio.add(formListarInscripciones);
+        dpEscritorio.moveToFront(formListarInscripciones);
+    }//GEN-LAST:event_mniListadoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -163,6 +181,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuBar mnbOpciones;
     private javax.swing.JMenuItem mniAlumnos;
     private javax.swing.JMenuItem mniInscripciones;
+    private javax.swing.JMenuItem mniListado;
     private javax.swing.JMenuItem mniMaterias;
     private javax.swing.JMenu mnuAgenda;
     // End of variables declaration//GEN-END:variables
